@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 
 import { useTranslation } from 'react-i18next';
-import logo from '../../assets/whitelogo.png'; // عدّل المسار حسب مجلد الصور لديك
+import logo from '../../assets/whiteLogo.png';
 
 export const Footer: React.FC = () => {
   const { t } = useTranslation();
