@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ==========================================================================
+   1. BASE STYLES & VARIABLES
+   ========================================================================== */
+@layer base {
+  :root {
+    --color-heading: #222222;
+    --color-subheading: #555555;
+    --color-page: #ffffff;
+    --color-secondary: #f8f8f8;
+  }
+
+  html {
+    background: var(--color-page);
+  }
+
+  body {
+    background: var(--color-page);
+    color: var(--color-subheading);
+    font-family: Montserrat, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html[lang="ar"] body {
+    font-family: Cairo, sans-serif;
+  }
+
+  ::selection {
+    background: var(--color-heading);
+    color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-heading);
+  }
+
+  button, input, select, textarea {
+    font: inherit;
+  }
+}
+
+/* ==========================================================================
+   2. KEYFRAMES & UTILITIES
+   ========================================================================== */
+.menu-panel-width {
+  width: min(53.125rem, calc(100vw - 2rem));
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(50%); }
+}
+
+@keyframes product-cart-bounce {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-2px) rotate(-8deg); }
+}
+
+/* Base styles for both sheen effects */
+.product-cart-sheen,
+.product-buy-sheen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 60%;
+  pointer-events: none;
+  transform: skewX(-12deg);
+  /* مراقبة الـ transform لضمان سلاسة الحركة */
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* 1. Add to Cart Sheen (تمرير شريط ضوئي سريع عبر الزر) */
+.product-cart-sheen {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(1px);
+  border-inline-end: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  inset-inline-start: 0;
+  transform: translateX(-180%) skewX(-12deg);
+}
+
+.group:hover .product-cart-sheen {
+  transform: translateX(220%) skewX(-12deg);
+}
+
+/* 2. Buy Now Sheen (تعبئة خلفية الزر بالكامل باللون الأبيض) */
+.product-buy-sheen {
+  background: #ffffff;
+  width: 120%; /* لضمان التغطية الكاملة مع الميلان skew */
+  inset-inline-start: 0;
+  transform: translateX(110%) skewX(-12deg);
+}
+
+.group:hover .product-buy-sheen {
+  transform: translateX(-10%) skewX(-12deg);
+}
+
+/* 3. Cart Icon Bounce Animation */
+.group:hover .product-cart-icon {
+  animation: product-cart-bounce 500ms ease-in-out infinite;
+}
+
+@keyframes product-cart-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* RTL Support */
+[dir="rtl"] .group-hover\/bar\:animate-\[marquee_2\.5s_linear_infinite\] {
+  animation: marquee-rtl 2.5s linear infinite !important;
+}
+
+/* ==========================================================================
+   3. LAYOUT COMPONENTS: TOP HEADER
+   ========================================================================== */
+@layer components {
+  .top-header-root {
+    @apply bg-[#222222] text-white text-sm py-4 sm:py-5 border-b border-white/10 select-none;
+  }
+
+  .top-header-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap gap-3 justify-between items-center min-h-6;
+  }
+
+  .top-header-phone {
+    @apply flex items-center gap-2 text-gray-200 text-base font-medium;
+  }
+
+  .top-header-controls {
+    @apply flex items-center gap-6 relative;
+  }
+
+  .top-header-dropdown-wrapper {
+    @apply relative;
+  }
+
+  .top-header-dropdown-btn {
+    @apply flex items-center gap-1 text-white hover:text-orange-400 transition-colors uppercase font-medium cursor-pointer;
+  }
+
+  .top-header-dropdown-menu {
+    @apply absolute top-full mt-1 ltr:right-0 rtl:left-0 bg-white border border-gray-200 rounded shadow-lg py-1 z-50;
+  }
+
+  .top-header-dropdown-item {
+    @apply w-full flex items-center gap-2 text-left rtl:text-right px-3 py-1.5 text-gray-700 hover:bg-orange-50 transition-colors cursor-pointer;
+  }
+
+  .top-header-language-name {
+    @apply pe-2;
+  }
+
+  .top-header-language-wrapper {
+    position: relative;
+  }
+
+  .top-header-language-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    inset-inline-end: -0.75rem;
+    width: 1px;
+    height: 1.25rem;
+    background-color: #929394;
+    transform: translateY(-50%);
+  }
+
+  .top-header-language-flag {
+    @apply block h-4 w-6 object-cover;
+  }
+
+  .top-header-dropdown-item-active {
+    @apply font-bold text-orange-500;
+  }
+}
+
+/* ==========================================================================
+   4. LAYOUT COMPONENTS: MAIN HEADER & NAV
+   ========================================================================== */
+@layer components {
+  .main-header-root {
+    @apply sticky top-0 z-40 bg-white border-b border-[#eeeeee] shadow-xs;
+  }
+
+  .main-header-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .main-header-row {
+    @apply flex items-center justify-between min-h-20 py-3 md:py-0;
+  }
+
+  .mobile-menu-trigger {
+    @apply lg:hidden order-first p-2 text-[#222222] hover:text-orange-500 transition-colors cursor-pointer;
+  }
+
+  .nav-bar-desktop {
+    @apply hidden lg:flex items-center space-x-6 rtl:space-x-reverse text-base font-medium text-[#555555] ms-auto me-3;
+  }
+
+  .header-logo-link {
+    @apply shrink-0 flex items-center py-2;
+  }
+
+  .header-logo-img {
+    @apply h-6 sm:h-8 w-auto object-contain;
+  }
+
+  .nav-link {
+    @apply py-2 hover:text-orange-500 transition-colors;
+  }
+
+  .nav-dropdown-wrapper {
+    @apply relative py-2 cursor-pointer;
+  }
+
+  .nav-dropdown-btn {
+    @apply flex items-center gap-1 py-2 hover:text-orange-500 transition-colors;
+  }
+
+  .header-actions-wrapper {
+    @apply hidden lg:flex items-center gap-3;
+  }
+
+  .header-icon-btn {
+    @apply p-2 lg:p-2.5 text-[#555555] hover:text-orange-500 transition-colors cursor-pointer relative;
+  }
+
+  .cart-badge {
+    @apply absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center;
+  }
+
+  .nav-bar-mobile {
+    @apply lg:hidden border-t border-[#eeeeee] py-3 text-sm font-semibold text-[#555555];
+  }
+
+  .mobile-nav-link {
+    @apply block py-3 hover:text-orange-500;
+  }
+
+  .mobile-nav-btn {
+    @apply flex w-full items-center justify-between py-3 hover:text-orange-500;
+  }
+}
+
+/* ==========================================================================
+   5. DROPDOWN MENU PANELS: PRODUCT MENU
+   ========================================================================== */
+@layer components {
+  .product-menu-panel {
+    @apply absolute top-full bg-white border border-[#eeeeee] shadow-2xl rounded-b-xl p-6 grid grid-cols-4 gap-6 text-sm font-normal text-[#555555] transition-all duration-300 z-50;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .product-nav-dropdown-wrapper {
+    position: static;
+  }
+
+  [dir="ltr"] .product-menu-panel {
+    transform: translateX(calc(-50% + 15rem));
+  }
+
+  [dir="rtl"] .product-menu-panel {
+    transform: translateX(calc(-50% - 15rem));
+  }
+
+  .product-menu-title {
+    @apply font-bold text-base text-[#222222] pb-1;
+  }
+
+  .product-menu-underline {
+    @apply h-0.5 bg-orange-500 w-1/5;
+  }
+
+  .product-menu-link {
+    @apply text-gray-600 hover:text-orange-500 transition-colors block text-xs sm:text-sm truncate;
+  }
+
+  .product-banner-card {
+    @apply relative block w-full h-full rounded-lg overflow-hidden bg-gray-900 border border-gray-100 shadow-sm;
+  }
+
+  .product-banner-img {
+    @apply w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500 ease-out;
+  }
+
+  .product-banner-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-5 flex flex-col justify-start text-white text-center;
+  }
+
+  .product-banner-brand {
+    @apply text-orange-500 font-extrabold text-xl tracking-wider uppercase mb-1;
+  }
+
+  .product-banner-text {
+    @apply text-gray-200 text-xs sm:text-sm font-medium tracking-wide;
+  }
+}
+
+/* ==========================================================================
+   6. DROPDOWN MENU PANELS: MEGA MENU (MATCHED WITH PRODUCT & COLLECTION)
+   ========================================================================== */
+@layer components {
+  .mega-menu-panel {
+    @apply absolute top-full w-[900px] max-w-[calc(100vw-2rem)] bg-white border border-[#eeeeee] shadow-2xl rounded-b-xl p-6 transition-all duration-300 z-50 text-sm font-normal text-[#555555];
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+
+  .mega-nav-dropdown-wrapper {
+    position: static;
+  }
+
+  [dir="ltr"] .mega-menu-panel {
+    transform: translateX(calc(-50% + 15rem));
+  }
+
+  [dir="rtl"] .mega-menu-panel {
+    transform: translateX(calc(-50% - 15rem));
+  }
+
+  .mega-menu-title {
+    @apply font-bold text-base text-[#222222] pb-1;
+  }
+
+  .mega-menu-underline {
+    @apply h-0.5 bg-orange-500 w-1/5;
+  }
+
+  .mega-menu-link {
+    @apply text-gray-600 hover:text-orange-500 transition-colors block text-xs sm:text-sm truncate;
+  }
+
+  .mega-menu-badge {
+    @apply bg-orange-500 text-white text-[9px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider;
+  }
+
+  .mega-menu-banner-card {
+    @apply relative flex items-center justify-between bg-[#f8f8f8] border border-gray-200/80 rounded-lg p-4 overflow-hidden mt-2 hover:border-gray-300 transition-all;
+  }
+}
+
+/* ==========================================================================
+   7. MEDIA QUERIES & RESPONSIVE BEHAVIOR
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .menu-panel-upward {
+    top: 100%;
+    bottom: auto;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-menu-panel {
+    position: static;
+    width: 100%;
+    max-width: none;
+    transform: none;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-height: min(65vh, 34rem);
+    overflow-y: auto;
+    border-inline: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem 0;
+  }
+
+  .main-menu-panel > div:nth-child(n + 3) {
+    display: none;
+  }
+
+  .mega-menu-panel {
+    position: static;
+    width: 100%;
+    max-width: none;
+    transform: none;
+    border-inline: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 1rem 0;
+  }
+
+  .mega-menu-columns {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .mega-menu-banner-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+}
+
+@layer components {
+  .footer-root {
+    @apply bg-[#202020] text-[#999999] text-sm mt-auto select-none font-medium w-full relative;
+  }
+
+  .footer-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .footer-title {
+    @apply font-semibold text-base text-white uppercase tracking-wider mb-5;
+  }
+
+  .footer-description {
+    @apply text-base leading-relaxed text-[#999999];
+  }
+
+  .footer-contact-item {
+    @apply flex items-start gap-2.5 text-sm text-[#999999];
+  }
+
+  .footer-links {
+  @apply space-y-3 text-base;
+}
+
+.footer-link {
+  @apply text-[#999999] transition-colors relative inline-block font-normal;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fa6400;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[dir="rtl"] .footer-link::after {
+  transform-origin: right;
+}
+
+.footer-link:hover::after {
+  transform: scaleX(1);
+}
+
+  .footer-input {
+    @apply w-full bg-white text-[#222222] text-base px-3.5 py-2.5 rounded-xs focus:outline-none placeholder:text-gray-400 border-none;
+  }
+
+  .footer-submit-btn {
+    @apply w-full bg-[#fa6400] hover:bg-[#e45013] text-white font-bold text-sm uppercase py-2.5 rounded-xs transition-colors cursor-pointer tracking-wider;
+  }
+
+  .footer-social-btn {
+    @apply w-8 h-8 rounded-xs bg-[#2b2b2b] text-[#999999] hover:bg-[#fa6400] hover:text-white transition-colors flex items-center justify-center;
+  }
+
+  .sub-footer-root {
+    @apply bg-[#202020] border-t border-[#2a2a2a] w-full;
+  }
+
+  .payment-methods {
+    @apply flex items-center gap-2;
+  }
+
+  .payment-icon {
+    @apply h-7 w-auto;
+  }
+
+  .payment-icon-visa {
+    color: #1a1f71;
+  }
+
+  .payment-icon-paypal {
+    color: #003087;
+  }
+
+  .payment-icon-mastercard {
+    color: #eb001b;
+  }
+
+  .payment-icon-stripe {
+    color: #635bff;
+  }
+
+  .payment-icon-amex {
+    color: #2e77bc;
+  }
+}
+
+@keyframes bounceWiggle {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-4px) rotate(-12deg); }
+  50% { transform: translateY(0) rotate(0deg); }
+  75% { transform: translateY(-4px) rotate(12deg); }
+}

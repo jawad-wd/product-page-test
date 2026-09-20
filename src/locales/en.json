@@ -1,0 +1,223 @@
+{
+  "common": {
+    "language": "English",
+    "english": "English",
+    "arabic": "Arabic",
+    "currency": {
+      "usd": "US Dollar",
+      "eur": "Euro",
+      "aed": "UAE Dirham"
+    }
+  },
+  "topHeader": {
+    "callUs": "Call Us: 123 - 456 - 7890"
+  },
+  "navigation": {
+    "home": "Home",
+    "collection": "Collection",
+    "product": "Product",
+    "megaMenu": "Mega Menu",
+    "blogs": "Blogs",
+    "pages": "Pages",
+    "seller": "Seller"
+  },
+  "collectionMenu": {
+    "collectionLayouts": "Collection Layouts",
+    "leftSidebar": "Collection Left Sidebar",
+    "rightSidebar": "Collection Right Sidebar",
+    "noSidebar": "Collection No Sidebar",
+    "grid2": "Collection 2 grid",
+    "grid3": "Collection 3 Grid",
+    "grid4": "Collection 4 Grid",
+    "list": "Collection list",
+    "categorySlider": "Collection Category Slider",
+    "categorySidebar": "Collection Category Side...",
+    "topFilter": "Collection Top Filter",
+    "sidebarPopup": "Collection Sidebar Popup",
+    "infiniteScroll": "Infinite Scroll",
+    "featured": "Featured",
+    "limitedTimeOffer": "Limited Time Offer",
+    "gymCoordsTitle": "Momen...",
+    "gymCoordsSub": "Gym Coords Set (Brown)",
+    "glamourDressTitle": "Glamour Ga...",
+    "glamourDressSub": "Mini Dress (Purple)",
+     "glamourDressSubPurple": "Mini Dress (Purple)",
+"glamourDressSubGreen": "Mini Dress (Green)",
+"glamourDressSubRed": "Mini Dress (Red)",
+"gymCoordsSubBrown": "Gym Coords Set (Brown)",
+"gymCoordsSubYellow": "Gym Coords Set (Yellow)",
+"gymCoordsSubBlack": "Gym Coords Set (Black)",
+    "off": "{{value}}% Off"
+  },
+ 
+  
+  "actions": {
+    "search": "Search",
+    "wishlist": "Wishlist",
+    "cart": "Shopping bag",
+    "account": "Account",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "viewProduct": "View product",
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "addToWishlist": "Add to wishlist",
+    "decreaseQuantity": "Decrease quantity",
+    "increaseQuantity": "Increase quantity"
+  },
+  "catalog": {
+    "badges": { "bestSeller": "Best seller", "twentyOff": "20% off", "new": "New" },
+    "products": {
+      "gymCoords": { "name": "Gym Coords Set", "category": "Women / Sportswear" },
+      "satinDress": { "name": "Satin Evening Mini Dress", "category": "Women / Dresses" },
+      "sneakers": { "name": "Cloud Walk Everyday Sneakers", "category": "Women / Shoes" },
+      "shoulderBag": { "name": "Structured Leather Shoulder Bag", "category": "Accessories / Bags" }
+    }
+  },
+  "home": {
+    "season": "The autumn edit · 2026",
+    "heroTitle": "Style that<br />moves with you.",
+    "heroText": "Thoughtful essentials, bold layers, and the pieces you will reach for every day.",
+    "shopNewArrivals": "Shop new arrivals",
+    "curated": "Curated for you",
+    "newArrivals": "The new arrivals",
+    "shopAll": "Shop all",
+    "freeShipping": "Free shipping",
+    "freeShippingText": "On orders over $75",
+    "secureCheckout": "Secure checkout",
+    "secureCheckoutText": "Your data stays protected",
+    "easyReturns": "Easy returns",
+    "easyReturnsText": "30 days to change your mind"
+  },
+  "shop": { "eyebrow": "The collection", "title": "Shop all", "description": "A considered edit of everyday pieces, occasion dressing, and accessories made to last.", "productsCount": "{{count}} products", "filters": "Filters", "featured": "Featured", "priceLow": "Price: low to high", "priceHigh": "Price: high to low" },
+  "cart": { "eyebrow": "Your selection", "title": "Shopping bag", "description": "Review your pieces before you make them yours.", "product": "Product", "quantity": "Quantity", "total": "Total", "size": "Size: M", "remove": "Remove", "summary": "Order summary", "subtotal": "Subtotal", "shipping": "Calculated at checkout", "continue": "Continue shopping", "checkout": "Proceed to checkout" },
+  "checkout": { "eyebrow": "Almost there", "title": "Checkout", "description": "Complete your details and we will take care of the rest.", "contact": "Contact information", "email": "Email address", "shippingAddress": "Shipping address", "firstName": "First name", "lastName": "Last name", "address": "Address", "city": "City", "postalCode": "Postal code", "placeOrder": "Place order", "yourOrder": "Your order", "quantityOne": "Qty 1", "securePayment": "Secure payment powered by Multikart", "returnToBag": "Return to bag" },
+  "account": { "eyebrow": "Welcome back", "title": "My account", "description": "Sign in to view your orders, saved pieces, and details.", "email": "Email address", "password": "Password", "signIn": "Sign in", "forgotPassword": "Forgot your password?" },
+  "notFound": { "eyebrow": "Page not found", "title": "We lost that page", "description": "The link may be out of date, but there is plenty more to discover.", "explore": "Explore the shop" },
+  "productDetails": {
+    "tabs": { "description": "Description", "review": "Review", "qna": "Q&A" },
+    "description": {
+      "first": "Gym Coords Set offers a comprehensive solution for those seeking comfort and style in their workout attire. This coordinated set is designed to elevate your gym experience, blending functionality with fashion. Crafted from high-quality, breathable fabrics, each piece ensures optimal performance and comfort during exercise.",
+      "second": "The set includes everything you need for a complete workout ensemble, featuring coordinating tops, bottoms, and accessories. Whether you are hitting the treadmill, pumping iron, or attending a yoga class, Gym Coords Set has you covered.",
+      "third": "With its modern design and versatile color palette, this set transitions effortlessly from the gym to casual outings, making it a practical addition to any active lifestyle."
+    },
+    "reviewsEmpty": "No reviews yet.", "reviewFirst": "Be the first to review this product!", "questionTitle": "Have questions about this product?", "questionText": "Ask a question to get answers from seller or other buyers.", "related": "Related Products", "sellingFast": "Selling fast! 1 person has this in their cart.", "reviewCount": "0 Review", "mrp": "MRP:", "inclusive": "Inclusive of all taxes", "deliveryReturn": "Delivery & Return", "askQuestion": "Ask A Question", "productInfo": "Product Info", "sku": "SKU:", "unit": "Unit:", "unitValue": "1 Item", "weight": "Weight:", "weightValue": "150 Gms", "stockStatus": "Stock Status:", "inStock": "In stock", "quantityLeft": "Quantity:", "itemsLeft": "40 Items Left", "deliveryDetails": "Delivery Details", "deliveryEstimate": "Your order is likely to reach you within 7 days.", "returns": "Hassle free returns within 7 Days.", "safeCheckout": "Guaranteed Safe Checkout", "secureCheckout": "Secure Checkout", "colour": "Colour:", "addToCart": "Add To Cart", "buyNow": "Buy Now", "compare": "Add To Compare", "share": "Share", "variants": "Variants:", "limitedOffer": "Limited Offer: {{value}}", "featured": "Featured"
+  },
+  "relatedProducts": {
+    "badges": { "trending": "Trending", "featured": "Featured" },
+    "discounts": { "ten": "10% Off", "five": "5% Off" },
+    "items": { "enduraFit": "EnduraFit", "fittedCoords": "Fitted Coords Set (Grey)", "thriveAthletica": "Thrive Athletica", "sportSet": "Sport Set (Green/S)" },
+    "categories": { "greySportSet": "Grey Sport Set", "sportsWear": "Sports Wear", "athleisureSet": "Athleisure Set", "enduraFit": "EnduraFit", "greyGymSuit": "Grey Gym Suit (S)" }
+  },
+  "app": {
+    "headerReady": "The header is ready. Get the image ready for the next section (Hero Section & Breadcrumbs)!"
+  },
+  "pageHeader": { "breadcrumb": "Breadcrumb" },
+  "product": {
+    "title": "Women's 2-Piece Stretch Sportswear Set",
+    "description": "A comfortable 2-piece stretch sportswear set, specially designed to provide maximum flexibility and support during workouts and yoga.",
+    "currency": "AED",
+    "breadcrumbs": {
+      "home": "Home",
+      "womenClothing": "Women Clothing",
+      "sportswear": "Sportswear"
+    },
+    "colors": {
+      "blue": "Vibrant Blue",
+      "brown": "Warm Brown",
+      "orange": "Bright Orange"
+    }
+  },
+  "productMenu": {
+    "productPage": "Product Page",
+    "productFeatures": "Product Features",
+    "productVariantsStyle": "Product Variants Style",
+    "productThumbnail": "Product Thumbnail",
+    "productImages": "Product Images",
+    "productSlider": "Product Slider",
+    "productAccordion": "Product Accordion",
+    "productSticky": "Product Sticky",
+    "productVerticalTab": "Product Vertical Tab",
+    "productSimple": "Product Simple",
+    "productClassified": "Product Classified",
+    "sizeChart": "Size Chart",
+    "deliveryReturn": "Delivery & Return",
+    "productReview": "Product Review",
+    "askAnExpert": "Ask an Expert",
+    "productSidebarLeft": "Product Sidebar Left",
+    "productSidebarRight": "Product Sidebar Right",
+    "productNoSidebar": "Product No Sidebar",
+    "productColumnThumb": "Product Column Thumb...",
+    "productThumbnailImage": "Product Thumbnail Imag...",
+    "bundleCrossSale": "Bundle (Cross Sale)",
+    "hotStockProgress": "Hot Stock Progress",
+    "outOfStock": "Out Stock",
+    "saleCountdown": "Sale Countdown",
+    "productZoom": "Product Zoom",
+    "variantRectangle": "Variant Rectangle",
+    "variantCircle": "Variant Circle",
+    "variantImageSwatch": "Variant Image Swatch",
+    "variantColor": "Variant Color",
+    "variantRadioButton": "Variant Radio Button",
+    "variantDropdown": "Variant Dropdown",
+    "stickyCheckout": "Sticky Checkout",
+    "secureCheckout": "Secure Checkout",
+    "socialShare": "Social Share",
+    "relatedProducts": "Related Products",
+    "wishlistCompare": "Wishlist & Compare",
+    "bannerSubtitle": "The Best Minimal Theme"
+  },
+ "megaMenu": {
+    "topBrands": "Top Brands",
+    "popularCategories": "Popular Categories",
+    "emailTemplate": "Email Template",
+    "sunsetglideSurfboards": "Sunsetglide Surfboards",
+    "enigmaFragrance": "Enigma Fragrance",
+    "drivelineDepot": "Driveline Depot",
+    "digitalHaven": "Digital Haven",
+    "lenscrafted": "Lenscrafted",
+    "fashion": "Fashion",
+    "fitgear": "Fitgear",
+    "lingerie": "Lingerie",
+    "hot": "Hot",
+    "bag": "Bag",
+    "watch": "Watch",
+    "welcome": "Welcome",
+    "abandonment": "Abandonment",
+    "offerTemplate": "Offer Template",
+    "orderSuccess": "Order Success",
+    "review": "Review",
+    "announcement": "Announcement",
+    "flashSale": "Flash-sale",
+    "blackFriday": "Black Friday",
+    "christmas": "Christmas",
+    "cyberMonday": "Cyber Monday",
+    "bannerSubtitle": "The Best Minimal Theme",
+    "bannerDemoBtn": "50+ Demo"
+  },
+  "footer": {
+    "description": "Discover the latest trends and enjoy seamless shopping with our exclusive collections.",
+    "address": "Multikart Demo Store, Demo Store India 345-659",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "categories": "CATEGORIES",
+    "catBaby": "Baby Essentials",
+    "catBag": "Bag Emporium",
+    "catBooks": "Books",
+    "catChristmas": "Christmas",
+    "catClassic": "Classic Furnishings",
+    "catOptics": "Crystal Clarity Optics",
+    "usefulLinks": "USEFUL LINKS",
+    "aboutUs": "About Us",
+    "offers": "Offers",
+    "helpCenter": "HELP CENTER",
+    "myAccount": "My Account",
+    "myOrders": "My Orders",
+    "faqs": "Faq's",
+    "followUs": "FOLLOW US",
+    "newsletterText": "Never Miss Anything From Store By Signing Up To Our Newsletter.",
+    "emailPlaceholder": "Enter Email Address",
+    "subscribe": "SUBSCRIBE",
+    "copyright": "2026 created by Jawad.eng"
+  }
+}

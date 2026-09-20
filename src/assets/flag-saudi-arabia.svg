@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Saudi Arabia flag">
+  <rect width="900" height="600" fill="#006c35"/>
+  <text x="450" y="255" fill="#fff" font-family="Arial, sans-serif" font-size="58" font-weight="700" text-anchor="middle" direction="rtl">لا إله إلا الله محمد رسول الله</text>
+  <path d="M230 375h440" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M670 375l42-18-19 18 19 18z" fill="#fff"/>
+</svg>

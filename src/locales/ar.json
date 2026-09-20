@@ -1,0 +1,227 @@
+{
+  "common": {
+    "language": "العربية",
+    "english": "الإنجليزية",
+    "arabic": "العربية",
+    "currency": {
+      "usd": "دولار أمريكي",
+      "eur": "يورو",
+      "aed": "درهم إماراتي"
+    }
+  },
+  "topHeader": {
+    "callUs": "اتصل بنا: 123 - 456 - 7890"
+  },
+  "navigation": {
+    "home": "الرئيسية",
+    "collection": "المجموعات",
+    "product": "المنتجات",
+    "megaMenu": "القائمة الشاملة",
+    "blogs": "المدونة",
+    "pages": "الصفحات",
+    "seller": "البائعين"
+  },
+
+  
+  "collectionMenu": {
+    "collectionLayouts": "تخطيطات المجموعات",
+    "leftSidebar": "القائمة الجانبية اليسرى",
+    "rightSidebar": "القائمة الجانبية اليمنى",
+    "noSidebar": "بدون قائمة جانبية",
+    "grid2": "شبكة 2 شبكاني",
+    "grid3": "شبكة 3 شبكاني",
+    "grid4": "شبكة 4 شبكاني",
+    "list": "عرض قائمة",
+    "categorySlider": "شريط التمرير للفئات",
+    "categorySidebar": "القائمة الجانبية للفئات",
+    "topFilter": "الفلتر العلوي",
+    "sidebarPopup": "نافذة جانبية منبثقة",
+    "infiniteScroll": "التمرير اللانهائي",
+    "featured": "مميز",
+    "limitedTimeOffer": "عرض لفترة محدودة",
+    "gymCoordsTitle": "Momen...",
+    "gymCoordsSub": "طقم رياضي (بني)",
+    "glamourDressTitle": "Glamour Ga...",
+    "glamourDressSub": "فستان قصير (بنفسجي)",
+    "glamourDressSubPurple": "فستان قصير (بنفسجي)",
+"glamourDressSubGreen": "فستان قصير (أخضر)",
+"glamourDressSubRed": "فستان قصير (أحمر)",
+"gymCoordsSubBrown": "طقم رياضي (بني)",
+"gymCoordsSubYellow": "طقم رياضي (أصفر)",
+"gymCoordsSubBlack": "طقم رياضي (أسود)",
+    "off": "خصم {{value}}%"
+  },
+  
+ 
+  "actions": {
+    "search": "بحث",
+    "wishlist": "المفضلة",
+    "cart": "سلة التسوق",
+    "account": "الحساب",
+    "openMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "viewProduct": "عرض المنتج",
+    "previousImage": "الصورة السابقة",
+    "nextImage": "الصورة التالية",
+    "addToWishlist": "إضافة إلى المفضلة",
+    "decreaseQuantity": "تقليل الكمية",
+    "increaseQuantity": "زيادة الكمية"
+  },
+  "catalog": {
+    "badges": { "bestSeller": "الأكثر مبيعاً", "twentyOff": "خصم 20%", "new": "جديد" },
+    "products": {
+      "gymCoords": { "name": "طقم Gym Coords الرياضي", "category": "نسائي / ملابس رياضية" },
+      "satinDress": { "name": "فستان سهرة ساتان قصير", "category": "نسائي / فساتين" },
+      "sneakers": { "name": "حذاء Cloud Walk اليومي", "category": "نسائي / أحذية" },
+      "shoulderBag": { "name": "حقيبة كتف جلدية منظمة", "category": "إكسسوارات / حقائب" }
+    }
+  },
+  "home": {
+    "season": "تشكيلة خريف 2026",
+    "heroTitle": "أناقة تتحرك<br />معك.",
+    "heroText": "قطع أساسية مدروسة، وطبقات جريئة، وتفاصيل ستختارينها كل يوم.",
+    "shopNewArrivals": "تسوقي الجديد",
+    "curated": "مختارة لك",
+    "newArrivals": "أحدث المنتجات",
+    "shopAll": "تسوق الكل",
+    "freeShipping": "شحن مجاني",
+    "freeShippingText": "للطلبات التي تتجاوز 75 دولاراً",
+    "secureCheckout": "دفع آمن",
+    "secureCheckoutText": "بياناتك محمية دائماً",
+    "easyReturns": "إرجاع سهل",
+    "easyReturnsText": "30 يوماً لتغيير رأيك"
+  },
+  "shop": { "eyebrow": "المجموعة", "title": "تسوق الكل", "description": "تشكيلة مختارة من القطع اليومية وملابس المناسبات والإكسسوارات المصممة لتدوم.", "productsCount": "{{count}} منتج", "filters": "الفلاتر", "featured": "مميز", "priceLow": "السعر: من الأقل للأعلى", "priceHigh": "السعر: من الأعلى للأقل" },
+  "cart": { "eyebrow": "اختياراتك", "title": "سلة التسوق", "description": "راجعي قطعك قبل إتمام الشراء.", "product": "المنتج", "quantity": "الكمية", "total": "الإجمالي", "size": "المقاس: M", "remove": "إزالة", "summary": "ملخص الطلب", "subtotal": "المجموع الفرعي", "shipping": "يُحسب عند الدفع", "continue": "متابعة التسوق", "checkout": "المتابعة إلى الدفع" },
+  "checkout": { "eyebrow": "اقتربت الخطوة الأخيرة", "title": "الدفع", "description": "أكملي بياناتك وسنتولى الباقي.", "contact": "بيانات التواصل", "email": "البريد الإلكتروني", "shippingAddress": "عنوان الشحن", "firstName": "الاسم الأول", "lastName": "اسم العائلة", "address": "العنوان", "city": "المدينة", "postalCode": "الرمز البريدي", "placeOrder": "تأكيد الطلب", "yourOrder": "طلبك", "quantityOne": "الكمية 1", "securePayment": "دفع آمن مقدم من Multikart", "returnToBag": "العودة إلى السلة" },
+  "account": { "eyebrow": "مرحباً بعودتك", "title": "حسابي", "description": "سجلي الدخول لعرض طلباتك وقطعك المحفوظة وبياناتك.", "email": "البريد الإلكتروني", "password": "كلمة المرور", "signIn": "تسجيل الدخول", "forgotPassword": "هل نسيت كلمة المرور؟" },
+  "notFound": { "eyebrow": "الصفحة غير موجودة", "title": "تعذر العثور على الصفحة", "description": "قد يكون الرابط قديماً، لكن هناك الكثير لاستكشافه.", "explore": "استكشاف المتجر" },
+  "productDetails": {
+    "tabs": { "description": "الوصف", "review": "التقييمات", "qna": "الأسئلة والأجوبة" },
+    "description": {
+      "first": "يقدم طقم Gym Coords حلاً متكاملاً لمن يبحثن عن الراحة والأناقة في ملابس التمارين. صُمم هذا الطقم المتناسق للارتقاء بتجربتك الرياضية، فهو يجمع بين العملية والموضة، وصُنع من أقمشة عالية الجودة وجيدة التهوية لتوفير أفضل أداء وراحة.",
+      "second": "يضم الطقم كل ما تحتاجينه لإطلالة رياضية متكاملة من قطع متناسقة. سواء كنت على جهاز المشي أو تمارسين تمارين القوة أو اليوغا، يمنحك طقم Gym Coords تغطية وأناقة طوال الوقت.",
+      "third": "بتصميمه العصري وألوانه المتنوعة، ينتقل الطقم بسهولة من النادي إلى الإطلالات اليومية، ليكون إضافة عملية إلى أسلوب حياتك النشط."
+    },
+    "reviewsEmpty": "لا توجد تقييمات بعد.", "reviewFirst": "كوني أول من يقيم هذا المنتج!", "questionTitle": "لديك أسئلة عن المنتج؟", "questionText": "اطرحي سؤالك للحصول على إجابة من البائع أو المشترين.", "related": "منتجات ذات صلة", "sellingFast": "المنتج مطلوب بسرعة! يوجد في سلة شخص واحد.", "reviewCount": "لا توجد تقييمات", "mrp": "السعر:", "inclusive": "شامل جميع الضرائب", "deliveryReturn": "التوصيل والإرجاع", "askQuestion": "اسألي سؤالاً", "productInfo": "معلومات المنتج", "sku": "رمز المنتج:", "unit": "الوحدة:", "unitValue": "قطعة واحدة", "weight": "الوزن:", "weightValue": "150 غراماً", "stockStatus": "حالة المخزون:", "inStock": "متوفر", "quantityLeft": "الكمية:", "itemsLeft": "40 قطعة متبقية", "deliveryDetails": "تفاصيل التوصيل", "deliveryEstimate": "من المتوقع وصول طلبك خلال 7 أيام.", "returns": "إرجاع سهل خلال 7 أيام.", "safeCheckout": "دفع آمن مضمون", "secureCheckout": "دفع آمن", "colour": "اللون:", "addToCart": "أضف إلى السلة", "buyNow": "اشتر الآن", "compare": "إضافة للمقارنة", "share": "مشاركة", "variants": "الخيارات:", "limitedOffer": "عرض محدود: {{value}}", "featured": "مميز"
+  },
+  "relatedProducts": {
+    "badges": { "trending": "رائج", "featured": "مميز" },
+    "discounts": { "ten": "خصم 10%", "five": "خصم 5%" },
+    "items": { "enduraFit": "EnduraFit", "fittedCoords": "طقم Fitted Coords (رمادي)", "thriveAthletica": "Thrive Athletica", "sportSet": "طقم رياضي (أخضر/M)" },
+    "categories": { "greySportSet": "طقم رياضي رمادي", "sportsWear": "ملابس رياضية", "athleisureSet": "طقم رياضي يومي", "enduraFit": "EnduraFit", "greyGymSuit": "بدلة رياضية رمادية (M)" }
+  },
+  "app": {
+    "headerReady": "تم بناء الترويسة بنجاح. جهّز الصورة للجزء القادم (القسم الرئيسي ومسار التنقل)!"
+  },
+  "pageHeader": { "breadcrumb": "مسار التنقل" },
+  "product": {
+    "title": "طقم رياضي نسائي ستريتش مكون من قطعتين",
+    "description": "طقم رياضي مريح ومطاطي مكون من قطعتين مصمم خصيصاً ليوفر لكِ حرية الحركة والدعم الكامل أثناء التمارين الرياضية واليوغا.",
+    "currency": "د.إ",
+    "breadcrumbs": {
+      "home": "الرئيسية",
+      "womenClothing": "ملابس نسائية",
+      "sportswear": "ملابس رياضية"
+    },
+    "colors": {
+      "blue": "أزرق حيوي",
+      "brown": "بني دافئ",
+      "orange": "برتقالي مشرق"
+    }
+  },
+  "productMenu": {
+    "productPage": "صفحة المنتج",
+    "productFeatures": "ميزات المنتج",
+    "productVariantsStyle": "أنماط خيارات المنتج",
+    "productThumbnail": "مصغّرات الصور",
+    "productImages": "صور المنتج",
+    "productSlider": "سلايدر الصور",
+    "productAccordion": "القائمة المنسدلة",
+    "productSticky": "المنتج الثابت",
+    "productVerticalTab": "التبويب العمودي",
+    "productSimple": "منتج بسيط",
+    "productClassified": "منتج مصنف",
+    "sizeChart": "جدول المقاسات",
+    "deliveryReturn": "الشحن والإرجاع",
+    "productReview": "تقييمات المنتج",
+    "askAnExpert": "استشر خبيراً",
+    "productSidebarLeft": "شريط جانبي يسار",
+    "productSidebarRight": "شريط جانبي يمين",
+    "productNoSidebar": "بدون شريط جانبي",
+    "productColumnThumb": "مصغّرات عمودية",
+    "productThumbnailImage": "صورة مصغرة",
+    "bundleCrossSale": "حزمة منتجات (بيع مدمج)",
+    "hotStockProgress": "مؤشر توفر المخزون",
+    "outOfStock": "نفد من المخزون",
+    "saleCountdown": "العداد التنازلي للخصم",
+    "productZoom": "تكبير صورة المنتج",
+    "variantRectangle": "خيارات مستطيلة",
+    "variantCircle": "خيارات دائرية",
+    "variantImageSwatch": "خيارات صور مصغرة",
+    "variantColor": "خيارات الألوان",
+    "variantRadioButton": "أزرار اختيار دائري",
+    "variantDropdown": "قائمة خيارات منسدلة",
+    "stickyCheckout": "زر شراء ثابت",
+    "secureCheckout": "دفع إلكتروني آمن",
+    "socialShare": "مشاركة التواصل الاجتماعي",
+    "relatedProducts": "منتجات ذات صلة",
+    "wishlistCompare": "المفضلة والمقارنة",
+    "bannerSubtitle": "التصميم الأدنى الأفضل والحديث"
+  },
+  "megaMenu": {
+    "topBrands": "أبرز العلامات التجارية",
+    "popularCategories": "الفئات الشائعة",
+    "emailTemplate": "قوالب البريد الإلكتروني",
+    "sunsetglideSurfboards": "ألواح تزلج Sunsetglide",
+    "enigmaFragrance": "عطور Enigma",
+    "drivelineDepot": "مستلزمات Driveline",
+    "digitalHaven": "عالم الرقميات Digital",
+    "lenscrafted": "نظارات Lenscrafted",
+    "fashion": "الأزياء والموضة",
+    "fitgear": "المعدات الرياضية",
+    "lingerie": "الملابس الداخلية",
+    "hot": "Hot",
+    "bag": "الحقائب",
+    "watch": "الساعات",
+    "welcome": "ترحيب بالعميل",
+    "abandonment": "السلة المتروكة",
+    "offerTemplate": "قالب العروض",
+    "orderSuccess": "تأكيد الطلب",
+    "review": "تقييم المنتج",
+    "announcement": "الإعلانات والتنويهات",
+    "flashSale": "العروض الخاطفة",
+    "blackFriday": "البلاك فرايداي",
+    "christmas": "عروض رأس السنة",
+    "cyberMonday": "السايبر مونداي",
+    "bannerSubtitle": "التصميم الأدنى الأفضل والحديث",
+    "bannerDemoBtn": "+50 عرض توضيحي"
+  },
+  
+  "footer": {
+    "description": "اكتشف أحدث صيحات الموضة واستمتع بتجربة تسوق سلسة مع مجموعاتنا الحصرية.",
+    "address": "متجر Multikart التوضيحي، الهند 345-659",
+    "callUs": "اتصل بنا",
+    "emailUs": "البريد الإلكتروني",
+    "categories": "الفئات",
+    "catBaby": "مستلزمات الأطفال",
+    "catBag": "حقائب فاخرة",
+    "catBooks": "كتب",
+    "catChristmas": "مجموعة الميلاد",
+    "catClassic": "أثاث كلاسيكي",
+    "catOptics": "نظارات وعدسات",
+    "usefulLinks": "روابط مفيدة",
+    "aboutUs": "من نحن",
+    "offers": "العروض",
+    "helpCenter": "مركز المساعدة",
+    "myAccount": "حسابي",
+    "myOrders": "طلباتي",
+    "faqs": "الأسئلة الشائعة",
+    "followUs": "تابعنا",
+    "newsletterText": "لا تفوّت أي شيء من المتجر عبر الاشتراك في نشرتنا البريدية.",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "subscribe": "اشتراك",
+    "copyright": "2026 أنشئ بواسطة المهندس جواد"
+  }
+
+}
